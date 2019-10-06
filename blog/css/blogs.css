@@ -1,0 +1,35 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+header{
+    /* width:1280px; */
+    height:130px;
+    border:1px solid red;
+    margin: 0 auto;
+}
+#main{
+    width:1280px;
+    /* height:1300px; */
+    border:1px solid red;
+    margin: 0 auto;
+}
+#main content{
+    width:800px;
+    border:1px solid red;
+    background-color:lightgray;
+    float:left;
+    /* height:100% */
+}
+#main aside{
+    border:1px solid red;
+    /* float:left; */
+    /* width:380px; */
+    /* height:100% */
+}
+footer{
+    height:136px;
+    border:1px solid red;
+}
