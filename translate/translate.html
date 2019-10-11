@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Event Propagation</title>
+  <link rel="stylesheet" href="translate.css">
+  <script src="translate.js"></script>
+</head>
+<body onclick="showBar()">
+  <header >
+    <div class="header-main">
+    <div id="bar" >
+      <img src="menu.png" alt="">   
+    </div>
+    <div class="h-title">
+      <div class="hTitleBlue">G</div>
+      <div class="hTitleRed">o</div>
+      <div class="hTitleOrgin">o</div>
+      <div class="hTitleBlue">g</div>
+      <div class="hTitleGreen">l</div>
+      <dib class="hTitleRed">e</dib>
+    </div>
+    </div>
+    <div id="aside-bar" class="hideBar"></div>
+  </header>
+  <main>
+    <div class="background"></div>
+    <div id="main">
+      <div class="main-header">
+        <div class="header-left">          
+        </div>
+        <div class="header-right"></div>
+      </div>
+      <div class="main-content">
+        <div class="content-header">
+            <div class="content-headeritems">
+              <div id="item1" class="header-item header-item-click" onclick="ShowLine()">检测语言</div>
+              <div id="item2" class="header-item " onclick="ShowLine()">英语</div>
+              <div class="header-item " onclick="ShowLine()">中文</div>
+              <div class="header-item " onclick="ShowLine()">德语</div>
+            </div>
+            <div class="content-headeritems">
+              <div class="header-item header-item-click " onclick="ShowLine()">检测语言</div>
+              <div class="header-item " onclick="ShowLine()">英语</div>
+              <div class="header-item " onclick="ShowLine()">中文</div>
+              <div class="header-item " onclick="ShowLine()">德语</div>
+            </div>
+        </div>
+        <div class="content">
+          <div class="content-left">
+            <textarea class="contentInput" ></textarea>
+          </div>
+          <div class="content-right">ok</div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="black"></div>
+  
+  </main>
+
+
+</body>
+</html>
