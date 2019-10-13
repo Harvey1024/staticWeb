@@ -1,64 +1,95 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Event Propagation</title>
   <link rel="stylesheet" href="translate.css">
   <script src="translate.js"></script>
 </head>
+
 <body onclick="showBar()">
-  <header >
+  <header>
     <div class="header-main">
-    <div id="bar" >
-      <img src="menu.png" alt="">   
+      <div id="bar">
+        <img src="menu.png" alt="">
+      </div>
+      <div class="h-title">
+        <div class="hTitleBlue titleBold">G</div>
+        <div class="hTitleRed titleBold">o</div>
+        <div class="hTitleOrgin titleBold">o</div>
+        <div class="hTitleBlue titleBold">g</div>
+        <div class="hTitleGreen titleBold">l</div>
+        <dib class="hTitleRed titleBold">e</dib>
+        <p> 翻译</p>
+      </div>
+
     </div>
-    <div class="h-title">
-      <div class="hTitleBlue">G</div>
-      <div class="hTitleRed">o</div>
-      <div class="hTitleOrgin">o</div>
-      <div class="hTitleBlue">g</div>
-      <div class="hTitleGreen">l</div>
-      <dib class="hTitleRed">e</dib>
+    <div id="aside-bar" class="hideBar">
+      <div class="h-title">
+        <div class="hTitleBlue titleBold">G</div>
+        <div class="hTitleRed titleBold">o</div>
+        <div class="hTitleOrgin titleBold">o</div>
+        <div class="hTitleBlue titleBold">g</div>
+        <div class="hTitleGreen titleBold">l</div>
+        <dib class="hTitleRed titleBold">e</dib>
+        <p> 翻译</p>
+      </div>
+      <div class="about asidebarpadding">About google translate</div>
+      <div class="asidebarpadding">隐私和条款</div>
+      <div class="asidebarpadding">发送反馈</div>
+      <div class="asidebarpadding">google大全</div>
     </div>
-    </div>
-    <div id="aside-bar" class="hideBar"></div>
   </header>
   <main>
     <div class="background"></div>
     <div id="main">
-      <div class="main-header">
-        <div class="header-left">          
-        </div>
-        <div class="header-right"></div>
-      </div>
-      <div class="main-content">
-        <div class="content-header">
-            <div class="content-headeritems">
-              <div id="item1" class="header-item header-item-click" onclick="ShowLine()">检测语言</div>
-              <div id="item2" class="header-item " onclick="ShowLine()">英语</div>
-              <div class="header-item " onclick="ShowLine()">中文</div>
-              <div class="header-item " onclick="ShowLine()">德语</div>
-            </div>
-            <div class="content-headeritems">
-              <div class="header-item header-item-click " onclick="ShowLine()">检测语言</div>
-              <div class="header-item " onclick="ShowLine()">英语</div>
-              <div class="header-item " onclick="ShowLine()">中文</div>
-              <div class="header-item " onclick="ShowLine()">德语</div>
-            </div>
-        </div>
+      <nav>
+        <ul class="typeandDownload">
+          <li class="chooseType titleClicked" onclick="chooseType(0)">文字</li>
+          <li class="chooseType" onclick="chooseType(1)">文档</li>
+        </ul>
+        <ul class="typeandDownload">
+          <p>点击图标下载App</p>
+          <li class="chooseType" onclick="chooseType(2)">Android</li>
+          <li class="chooseType" onclick="chooseType(3)">ios</li>
+        </ul>
+      </nav>
+      <section class="main-content">
+        <nav class="content-header">
+          <ul class="content-headeritems">
+            <li class="header-item leftChooseSig header-item-click" onclick="ShowLine(0,'left')">检测语言</li>
+            <li class="header-item leftChooseSig " onclick="ShowLine(1,'left')">英语</li>
+            <li class="header-item leftChooseSig " onclick="ShowLine(2,'left')">中文</li>
+            <li class="header-item leftChooseSig " onclick="ShowLine(3,'left')">德语</li>
+          </ul>
+          <ul class="content-headeritems">
+            <li class="header-item rightChooseSig header-item-click" onclick="ShowLine(0,'right')">检测语言</li>
+            <li class="header-item rightChooseSig" onclick="ShowLine(1,'right')">英语</li>
+            <li class="header-item rightChooseSig" onclick="ShowLine(2,'right')">中文</li>
+            <li class="header-item rightChooseSig" onclick="ShowLine(3,'right')">德语</li>
+          </ul>
+        </nav>
         <div class="content">
           <div class="content-left">
-            <textarea class="contentInput" ></textarea>
+            <textarea class="contentInput"></textarea>
           </div>
           <div class="content-right">ok</div>
         </div>
-      </div>
-      
+      </section>
+
     </div>
     <div class="black"></div>
-  
+
   </main>
+  <footer>
+    <div class="history">
+      <img src="history.png" alt="">
+    </div>
+    <p>history</p>
+  </footer>
 
 
 </body>
+
 </html>
