@@ -1,36 +1,51 @@
 <!DOCTYPE html>
+<!-- w3schools howto excise -->
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>My widget</title>
 	<link rel="stylesheet" href="css/widget.css">
 	<script src="js/widget.js"></script>
 </head>
+
 <body>
-		<header>
-			<nav>
-				<ul>
-					<li class="c1" onmouseover="c1showm()" onmouseout="c1hidem()">li1
-						<section id="x1" class="x1hide" onmouseover="c1showm()" onmouseout="c1hidem()">
-							1<br/>
-							2<br/>
-							3<br/>
-						</section>
-					</li>
-					<li class="c2" onmouseover="c2showm()" onmouseout="c2hidem()">li2
-						<section id="x2" class="x2hide" onmouseover="c2showm()" onmouseout="c2hidem()">
-							4<br/>
-							5<br/>
-							6<br/>
-						</section>
-					</li>
-				</ul>
-				
-			</nav>
-			
-		</header>
-		<footer>
-			hello world hello world hello world hello world hello world hello world hello world  
-		</footer>
-	</body>
-	</html>
+	<header class="bd">
+		<a class="header-text" href="https://www.w3schools.com/howto/default.asp">
+			W3Schools How To </a>
+		<p> &nbsp excise</p>
+	</header>
+	<main class="main-width bd">
+		<section id="navigationBar" class="c-mode">
+			<div class="header">Navigation bar</div>
+			<div class="content">
+				<nav>
+					<ul class="flexCenter">
+						<li class="co flexCenter" onmouseover="c1showm(0)" onmouseout="c1hidem(0)">li1
+							<div class="navItems" onmouseover="c1showm(0)" onmouseout="c1hidem(0)">
+								1<br />
+								2<br />
+								3<br />
+							</div>
+						</li>
+						<li class="co flexCenter" onmouseover="c1showm(1)" onmouseout="c1hidem(1)">li2
+							<div class="navItems" onmouseover="c1showm(1)" onmouseout="c1hidem(1)">
+								4<br />
+								5<br />
+								6<br />
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<section id="slidesShow" class="c-mode">
+			<div class="header">Slides Show</div>
+			<div class="content"></div>
+		</section>
+	</main>
+	<footer>
+	</footer>
+</body>
+
+</html>

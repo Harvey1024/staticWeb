@@ -7,66 +7,69 @@
 ul{
     list-style: none;
 }
-/* header{border:1px solid red;} */
-
-footer{
-    height: 100px;
-    background-color: lightsteelblue;
+.bd{
+    border:1px solid red;
 }
-li{
-    border:1px solid black;
-    width: 150px;
-    text-align: center;
-}
-section{
-    height: 100px;
-    background-color: gray;
-    width: 300px;
-    text-align: left;
-}
-
-li:hover{
-    background-color: gray;
-}
-
-.x1hide, .x2hide{
-    display: none;
-}
-
-li{position: relative;}
-section{
-    position: absolute;
-    bottom: -100px;
-}
-
-/* flex method */
-ul{
-    display:flex;
+header{
+    width: 800px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
     flex-direction: row;
-    width:200px; 
-    align-items: flex-end; 
+    align-items: center;
 }
-nav{
+header a, header p{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+main{
+    width:800px;    
+    /* height: 1000px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+.c-mode{
+    display: flex;
+    background-color: white;
+    width: 94%;
+    margin: 20px auto;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px gray;
+}
+.flexCenter{
     display: flex;
     justify-content: center;
-    height: 100px;
-    
+    align-items: center;
 }
 
-/* float method */
-/* 
-li{
-    float: left;
+#navigationBar ul{
+    flex-direction: row;
+    height: 60px;
 }
-ul::after{
-    content: "";
-    display: block;
-    clear: both;
+#navigationBar li{
+    position: relative;
+    align-items: center;
+    width: 100px;
+    padding: 2px 0;
+    margin: 12px 0;
+    background-color: #f1f1f1;
+    box-sizing: content-box;
 }
-ul{
-    margin: 0 auto;
+#navigationBar li:first-child{border-right: 2px solid white;}
+#navigationBar li:hover{
+    background-color: lightgray;
+    border-bottom: 2px solid gray;
 }
-ul{
-    border:1px solid red;
-    width: 304px;
-} */
+.navItems{
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    top: 40px;
+}
+#slidesShow{
+    height: 200px;
+}
