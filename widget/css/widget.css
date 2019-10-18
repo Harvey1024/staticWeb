@@ -17,6 +17,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 header a, header p{
     text-decoration: none;
@@ -39,27 +40,32 @@ main{
     flex-direction: column;
     box-shadow: 1px 1px 8px gray;
 }
+.content{padding: 10px;}
 .flexCenter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#navigationBar ul{
+#dropDowns nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#dropDowns ul{
     flex-direction: row;
     height: 60px;
 }
-#navigationBar li{
+#dropDowns li{
     position: relative;
-    align-items: center;
-    width: 100px;
-    padding: 2px 0;
-    margin: 12px 0;
+    justify-content: center;
+    font-size: 20px;
+    padding: 2px 12px;
+    margin: 0 2px;
     background-color: #f1f1f1;
     box-sizing: content-box;
 }
-#navigationBar li:first-child{border-right: 2px solid white;}
-#navigationBar li:hover{
+#dropDowns li:first-child{border-right: 2px solid white;}
+#dropDowns li:hover{
     background-color: lightgray;
     border-bottom: 2px solid gray;
 }
@@ -68,8 +74,65 @@ main{
     position: absolute;
     background-color: lightgray;
     width: 100%;
-    top: 40px;
+    top: 32px;
 }
 #slidesShow{
     height: 200px;
 }
+.hoverDropDown{
+    position: relative;
+}
+.hoverDropDown button{
+    background-color: #f1f1f1;
+    font-size: 20px;
+    width: 190px;
+    padding: 2px 12px;
+    margin: 0 2px;    
+    height: 30px;
+}
+.hDropDownContent{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    margin-left: 2px;  
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    width: 190px;
+    height: 30px;
+}
+nav a:hover{
+    background-color: lightgray;
+}
+.hoverDropDown button:hover{
+    background-color: lightgray;
+    border-bottom: 2px solid gray;
+}
+.hoverDropDown:hover .hDropDownContent{
+    display: block;
+    border-top: 2px solid gray;
+
+}
+.clickDropDown{
+    position: relative;
+}
+.cDropDownContent{
+    position: absolute;
+    background-color: #f1f1f1;
+    display: none;
+}
+.cDropBtn{
+    background-color: #3498DB;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    width: 190px;
+    height: 30px;
+}
+.cDropBtn:hover, .cDropBtn:focus{
+    background-color: #2980B9;
+}
+.show{display: block;}
