@@ -22,14 +22,14 @@ function slideImg(countOfImg, slideSign) {
         for (var j = 0; j < slideClassList.length; j++) {
             if (slideClassList[j] == "hide") {
                 if (slideSign == "prev")
-                    var k = i - 1;
+                    var nextSlideNum = i - 1;
                 if (slideSign == "next")
-                    var k = i + 1;
-                if (k < 0)
-                    k = countOfImg - 1;
-                if (k == countOfImg)
-                    k = 0;
-                slide[k].classList.add("hide");
+                    var nextSlideNum = i + 1;
+                if (nextSlideNum < 0)
+                    nextSlideNum = countOfImg - 1;
+                if (nextSlideNum == countOfImg)
+                    nextSlideNum = 0;
+                slide[nextSlideNum].classList.add("hide");
                 slide[i].classList.remove("hide");
                 slideFinished = 1;
                 break;
