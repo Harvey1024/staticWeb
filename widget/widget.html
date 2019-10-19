@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="clickDropDown">
-            <button class="cDropBtn" onclick="showDropDown()">Hover DorpDowns</button>
+            <button class="cDropBtn" onclick="showDropDown()">Click DorpDowns</button>
             <div class="cDropDownContent">
               <a href="#">Link1</a>
               <a href="#">Link2</a>
@@ -57,10 +57,30 @@
       </div>
     </section>
     <section id="slidesShow" class="c-mode">
-      <div class="header">Slides Show</div>
+      <div class="header">Slide Show</div>
       <div class="section">
-        div
+        <div class="slideContent">
+          <div class="myslides">
+            <div class="numofPage">1/2</div>
+            <img src="../blog/img/card1.jpg" alt="">
+            <div class="imgName">img1</div>
+          </div>
+          <div class="myslides hide">
+            <div class="numofPage">2/2</div>
+            <img src="../blog/img/card2.jpg" alt="">
+            <div class="imgName">img2</div>
+          </div>
+          <div class="prveImg slideImg" onclick="slideImg(2,'prev')">&#10094</div>
+          <div class="nextImg slideImg" onclick="slideImg(2, 'next')">&#10095</div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
       </div>
+    </section>
+    <section id="login" class="c-mode">
+
     </section>
     <footer>
     </footer>
