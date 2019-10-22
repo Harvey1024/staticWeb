@@ -1,5 +1,5 @@
 
-
+showSlides();
 
 function c1showm(n) {
     var w1 = document.getElementsByClassName("co");
@@ -68,4 +68,11 @@ function showSlides(){
         testno=0;
     setTimeout(showSlides, 2000);
 }
-showSlides();
+
+function Login(sign){
+    var login=document.getElementsByClassName("loginform");
+    if(sign)
+        login[0].classList.remove("hide");
+    else
+        login[0].classList.add("hide");
+}

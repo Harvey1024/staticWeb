@@ -10,6 +10,9 @@ ul{
 .bd{
     border:1px solid red;
 }
+button, a{
+    cursor: pointer;
+}
 header{
     width: 800px;
     height: 120px;
@@ -200,4 +203,110 @@ nav a:hover{
 .dot:hover{
     background-color: #7e7e7e;
     cursor: pointer;
+}
+#login .loginBtn{
+    background-color: #2090ec;
+    color: white;
+    margin: 10px;
+    padding: 5px 20px;
+    outline: none;
+    cursor: pointer;
+}
+#login .loginBtn:hover{
+    background-color: #077cdb;
+}
+#login .loginBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #999999;
+    opacity: 0.5;
+}
+#login form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.login{
+    background-color: white;
+    margin: 200px auto;
+    
+    width: 400px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.login img{
+    width: 60%;
+    margin: 30px auto 0;
+}
+.login .container{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 20px;
+}
+.login .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login label{
+    display: block;
+    font-size: 20px;
+}
+.login label:last-child{
+    font-size: 14px;
+    color: gray;
+}
+.login .submitBtn{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+.login input{
+    border: 1px solid gray;
+    width: 100%;
+}
+.login .footer{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: flex-end;
+}
+.login input:last-child{
+    width:auto;
+}
+.login .cancel{
+    margin-left: 20px;
+    display: inline-block;
+    padding: 0 20px;
+}
+.login .footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color: blue;
+    margin-right: 20px;
+}
+.login .close{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+.login .close:hover{
+    background-color: #f1f1f1;
 }

@@ -80,7 +80,34 @@
       </div>
     </section>
     <section id="login" class="c-mode">
-
+      <div class="header">Login</div>
+      <div class="section">
+        <button class="loginBtn" onclick="Login(1)">login</button>
+      </div>
+      <!-- <div class="loginBackground"></div> -->
+      <form class="loginform hide " action="/actionpage">
+        <div class="loginBackground"></div>
+        <div class="login">
+          <div class="close" onclick="Login(0)">&times</div>
+          <div class="img">
+            <img src="../blog/img/me.jpg" alt="head">
+          </div>
+          <div class="container">
+            <label for="username">username</label>
+            <input type="text" placeholder="Enter username" name="name" required>
+            <label for="password">password</label>
+            <input type="password" placeholder="Enter password" name="password" required>
+            <button class="submitBtn" type="submit">submit</button>
+            <label ><input type="checkbox" name="" id="">Remember me
+            </label>
+          </div>
+          <div class="footer">
+            <button class="cancel" onclick="Login(0)" >Cancel</button>
+            <a href="#">forget password</a>
+          </div>
+          
+        </div>
+      </form>
     </section>
     <footer>
     </footer>
