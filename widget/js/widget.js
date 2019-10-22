@@ -70,9 +70,17 @@ function showSlides(){
 }
 
 function Login(sign){
-    var login=document.getElementsByClassName("loginform");
-    if(sign)
-        login[0].classList.remove("hide");
-    else
-        login[0].classList.add("hide");
+    var loginform=document.getElementsByClassName("loginform");
+    var login=document.getElementsByClassName("login");
+    if(sign){
+        loginform[0].classList.remove("hide");
+        // login[0].classList.remove("animateout");
+        // login[0].classList.add("animate");
+    }
+    else{
+        loginform[0].classList.add("hide");
+        // login[0].classList.add("animateout");
+        // login[0].classList.remove("animate");
+    }
+        
 }
