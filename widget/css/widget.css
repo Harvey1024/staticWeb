@@ -397,3 +397,17 @@ body{
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
+.myloader{
+    content:"ok";
+    width:50px;
+    margin: 20px ;
+    height: 50px;
+    border: 10px solid lightgray;
+    border-top: 10px solid #3498DB;
+    border-radius: 50px;
+    animation: loader 0.5s linear infinite;
+}
+@keyframes loader{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
