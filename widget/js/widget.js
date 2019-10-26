@@ -2,10 +2,21 @@
 showSlides();
 
 window.onclick = function (event) {
-    if (!event.target.matches(".cDropBtn") & !event.target.matches(".slideImg") & !event.target.matches(".loginBtn") & !event.target.matches(".login")) {
+    // hide dropdown
+    if (!event.target.matches(".cDropBtn") & !event.target.matches(".slideImg")) {
         dropdown = document.getElementsByClassName("cDropDownContent")[0].classList.remove('show');
+    }
+    // hide slide navigation
+    if (!event.target.matches(".blueBtn")) {
         slide = document.getElementsByClassName("myslide")[0].style.width = "0";
         document.getElementById("body").style.margin = "0";
+    }
+    // hide login
+    if (event.target.matches(".loginform")) {
+        document.getElementsByClassName("loginform")[0].classList.add("hide");
+    }
+    if (event.target.matches(".mymodal")) {
+        document.getElementsByClassName("mymodal")[0].style.display = "none";
     }
 }
 
@@ -97,4 +108,8 @@ function slidePush() {
     slide[0].style.width = "270px";
     var main = document.getElementById("body");
     main.style.margin = "0 0 0 270px"
+}
+function displayBox() {
+    var modalBox = document.getElementsByClassName("mymodal");
+    modalBox[0].style.display = "block";
 }

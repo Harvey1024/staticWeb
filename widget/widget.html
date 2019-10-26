@@ -85,10 +85,9 @@
     <section id="login" class="c-mode" name="login">
       <div class="header">Login</div>
       <div class="section">
-        <button class="loginBtn" onclick="Login(1)">login</button>
+        <button class="blueBtn" onclick="Login(1)">login</button>
       </div>
       <form class="loginform  hide " action="/actionpage">
-        <div class="loginBackground"></div>
         <div class="login animate">
           <div class="close" onclick="Login(0)">&times</div>
           <div class="img">
@@ -110,19 +109,38 @@
         </div>
       </form>
     </section>
+    <!-- slide navigation -->
     <section id="slideNav" class="c-mode" name="slideNav">
       <div class="header">Slide Navigation</div>
       <div class="section">
-        <div class="slideOverlay loginBtn" onclick="slideOverlay()">Slidenav overlay</div>
-        <div class="slidePush loginBtn" onclick="slidePush()">SlidenavPush</div>
+        <div class="slideOverlay blueBtn" onclick="slideOverlay()">&#9776;Slidenav overlay</div>
+        <div class="slidePush blueBtn" onclick="slidePush()">SlidenavPush</div>
       </div>
       <div class="myslide">
-        <a>content</a>
+        <a>&#9776; content</a>
         <hr>
         <a href="#dropDowns">dropdowns</a>
         <a href="#slideShows">slide show</a>
         <a href="#login">login</a>
         <a href="#slideNav">slide Navigation</a>
+      </div>
+    </section>
+    <!-- modal box -->
+    <section name="modalBox" class="c-mode">
+      <div class="header">Modal box</div>
+      <div class="section">
+        <button class="blueBtn" onclick="displayBox()">Modal box</button>
+        <div class="mymodal">
+          <div class="modalContent">
+            This is modal box
+          </div>
+        </div>
+      </div>
+    </section>
+    <section name="popups" class="c-mode">
+      <div class="header">Popups</div>
+      <div class="section">
+
       </div>
     </section>
   </main>
