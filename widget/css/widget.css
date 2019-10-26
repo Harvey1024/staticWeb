@@ -374,3 +374,26 @@ body{
     from{top: -400px;opacity: 0;}
     to{top: 0;opacity: 1;}
 }
+.popups .section{
+    position: relative;
+}
+.popuptext{
+    position: absolute;
+    top: -30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px black;
+}
+.popuptext:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}

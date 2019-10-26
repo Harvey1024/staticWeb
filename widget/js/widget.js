@@ -20,6 +20,7 @@ window.onclick = function (event) {
     }
 }
 
+
 function c1showm(n) {
     var w1 = document.getElementsByClassName("co");
     w1[n].children[0].style.display = "block";
@@ -112,4 +113,8 @@ function slidePush() {
 function displayBox() {
     var modalBox = document.getElementsByClassName("mymodal");
     modalBox[0].style.display = "block";
+}
+function popup() {
+    var popup = document.getElementsByClassName("popuptext");
+    popup[0].classList.toggle("hide");
 }
