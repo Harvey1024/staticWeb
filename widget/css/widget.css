@@ -204,15 +204,16 @@ nav a:hover{
     background-color: #7e7e7e;
     cursor: pointer;
 }
-#login .loginBtn{
+.loginBtn{
     background-color: #2090ec;
     color: white;
     margin: 10px;
+    display: inline-block;
     padding: 5px 20px;
     outline: none;
     cursor: pointer;
 }
-#login .loginBtn:hover{
+.loginBtn:hover{
     background-color: #077cdb;
 }
 #login .loginBackground{
@@ -249,7 +250,7 @@ nav a:hover{
 
 .login{
     background-color: white;
-    margin: 200px auto;
+    margin: 120px auto;
     
     width: 400px;
     flex-direction: column;
@@ -325,4 +326,33 @@ nav a:hover{
 }
 .login .close:hover{
     background-color: #f1f1f1;
+}
+.myslide a{
+    text-decoration: none;
+    color: gray;
+    padding: 20px 15px;
+}
+.myslide a:hover{
+    color: white;
+}
+.myslide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: black;
+    color:gray;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    transition: linear 0.3s;
+}
+.myslide hr{
+    border: 0;
+    background-color: gray;
+    height: 1px;
+}
+body{
+    transition: 0.3s;
 }

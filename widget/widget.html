@@ -9,14 +9,15 @@
   <script src="js/widget.js"></script>
 </head>
 
-<body>
+<body id="body">
   <header class=" ">
     <a class="header-text" href="https://www.w3schools.com/howto/default.asp">
       W3Schools How To </a>
     <p> &nbsp excise</p>
   </header>
-  <main class="main-width">
-    <section id="dropDowns" class="c-mode">
+  <main id="main" class="">
+    <!-- dropdowns model -->
+    <section id="dropDowns" class="c-mode" name="drapDowns">
       <div class="header">dropDowns</div>
       <div class="content">
         <nav>
@@ -56,7 +57,8 @@
 
       </div>
     </section>
-    <section id="slidesShow" class="c-mode">
+    <!-- Slideshow model -->
+    <section id="slidesShow" class="c-mode" name="slideShows">
       <div class="header">Slide Show</div>
       <div class="section">
         <div class="slideContent">
@@ -79,12 +81,12 @@
         </div>
       </div>
     </section>
-    <section id="login" class="c-mode">
+    <!-- login model -->
+    <section id="login" class="c-mode" name="login">
       <div class="header">Login</div>
       <div class="section">
         <button class="loginBtn" onclick="Login(1)">login</button>
       </div>
-      <!-- <div class="loginBackground"></div> -->
       <form class="loginform  hide " action="/actionpage">
         <div class="loginBackground"></div>
         <div class="login animate">
@@ -98,19 +100,34 @@
             <label for="password">password</label>
             <input type="password" placeholder="Enter password" name="password" required>
             <button class="submitBtn" type="submit">submit</button>
-            <label ><input type="checkbox" name="" id="">Remember me
+            <label><input type="checkbox" name="" id="">Remember me
             </label>
           </div>
           <div class="footer">
-            <button class="cancel" onclick="Login(0)" >Cancel</button>
+            <button class="cancel" onclick="Login(0)">Cancel</button>
             <a href="#">forget password</a>
           </div>
-          
         </div>
       </form>
     </section>
-    <footer>
-    </footer>
+    <section id="slideNav" class="c-mode" name="slideNav">
+      <div class="header">Slide Navigation</div>
+      <div class="section">
+        <div class="slideOverlay loginBtn" onclick="slideOverlay()">Slidenav overlay</div>
+        <div class="slidePush loginBtn" onclick="slidePush()">SlidenavPush</div>
+      </div>
+      <div class="myslide">
+        <a>content</a>
+        <hr>
+        <a href="#dropDowns">dropdowns</a>
+        <a href="#slideShows">slide show</a>
+        <a href="#login">login</a>
+        <a href="#slideNav">slide Navigation</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
 </body>
 
 </html>
