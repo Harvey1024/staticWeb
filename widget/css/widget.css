@@ -412,3 +412,28 @@ body{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
+.filter input{
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+}
+.filterTable li{
+    background-color: #fdfdfd;
+    border: 1px solid #d6d6d6;
+    
+    position: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterTable a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    color: black;
+    line-height: 100%;
+    font-size: 14px;
+}
+.filterTable li:hover{
+    background-color: #d6d6d6;
+}

@@ -118,3 +118,24 @@ function popup() {
     var popup = document.getElementsByClassName("popuptext");
     popup[0].classList.toggle("hide");
 }
+function filterNames(){
+    var filterInput=document.getElementById("filterText");
+    var filterText=filterInput.value.toUpperCase();
+    var ul=document.getElementsByClassName("filterTable")[0];
+    var li=ul.getElementsByTagName("li");
+    // remove class "hide" for all items of ul when keyup
+    for(var i=0; i<li.length; i++){
+        li[i].classList.remove("hide");
+    } 
+    for(var i=0; i<filterText.length;i++){
+        //compare each letter with li
+        var filterTextItem=filterText[i];
+        for(var j=0; j<li.length; j++){
+            var names=li[j].getElementsByTagName("a")[0];
+            var namesText=names.innerText;
+            if(namesText.toUpperCase().indexOf(filterTextItem)==-1)
+            //indexof=-1 mean no letter in li
+                li[j].classList.add("hide");
+        }
+    }
+}
