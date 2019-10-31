@@ -437,3 +437,8 @@ body{
 .filterTable li:hover{
     background-color: #d6d6d6;
 }
+.filterTable span{
+    font-size: 14px;
+    color: #3498DB;
+    text-decoration: black;
+}

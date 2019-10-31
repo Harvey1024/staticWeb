@@ -138,4 +138,31 @@ function filterNames(){
                 li[j].classList.add("hide");
         }
     }
+    // hilight filter in text
+    for(var i=0; i<li.length;i++){
+        var names=li[i].getElementsByTagName("a")[0];
+        if(li[i].classList.value.length==0)
+            names.innerHTML=filterSpan(names.innerText, filterText);
+    }
+
+}
+function filterSpan(text, filter){
+    //add span in filter
+    var temp=0;
+    var spanArr=[];
+    var compareSign=0; //position of filter in text
+    for(var i=0; i<filter.length; i++){
+        for(var j=0; j<text.length; j++){
+            if(filter[i].toUpperCase()==text[j].toUpperCase()){
+                spanArr[compareSign++]=text.slice(temp,j);
+                spanArr[compareSign++]="<span>"+text[j]+"</span>";
+                spanArr[compareSign]=text.slice(j+1, text.length)
+                temp=j+1;
+            }
+
+        }
+    }
+    if(spanArr.length==0)
+        spanArr[0]=text;
+    return spanArr.join("");
 }
